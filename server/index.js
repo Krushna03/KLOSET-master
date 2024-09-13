@@ -9,10 +9,17 @@ dotenv.config();
 
 const app = express();
 
-// Configure CORS to allow requests from any origin
+// app.use(cors({
+//   origin: "*", 
+// }));
+
 app.use(cors({
-  origin: "*", // Allows requests from any origin
+  origin: ["https://frontend-kloset.vercel.app/"], 
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+  credentials: true
 }));
+
+
 
 app.use(express.json());
 
@@ -28,6 +35,8 @@ mongoose
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
-app.listen(3000, () => {
-  console.log("SERVER STARTED");
+  const port = process.env.PORT || 3000
+
+app.listen(port, () => {
+  console.log("SERVER STARTED:" , port);
 });

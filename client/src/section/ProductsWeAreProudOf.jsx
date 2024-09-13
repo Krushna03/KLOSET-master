@@ -13,7 +13,7 @@ const ProductsWeAreProudOf = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("https://kloset.onrender.com/product");
+        const response = await axios.get("https://backend-kloset-1.onrender.com/product");
         setProducts(response.data.products);
       } catch (error) {
         console.error("Error fetching products", error);

@@ -18,7 +18,7 @@ const CarouselComp = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch("https://kloset.onrender.com/product");
+        const response = await fetch("https://backend-kloset-1.onrender.com/product");
         const data = await response.json();
         setProducts(data.products); // Update based on the actual data structure
       } catch (err) {

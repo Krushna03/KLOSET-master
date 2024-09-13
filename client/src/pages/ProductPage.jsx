@@ -10,7 +10,7 @@ const ProductPage = () => {
     const fetchRandomProduct = async () => {
       try {
         // Fetch all products
-        const response = await axios.get("https://kloset.onrender.com/product");
+        const response = await axios.get("https://backend-kloset-1.onrender.com/product");
         const products = response.data.products;
 
         // Check if products are available

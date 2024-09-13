@@ -23,7 +23,7 @@ export const AuthProvider = ({ children }) => {
   const login = async (username, password) => {
     try {
       // Send login request
-      const response = await axios.post("https://kloset.onrender.com/user/login", {
+      const response = await axios.post("https://backend-kloset-1.onrender.com/user/login", {
         username,
         password,
       });
@@ -31,7 +31,7 @@ export const AuthProvider = ({ children }) => {
 
       // Fetch available money
       const moneyResponse = await axios.get(
-        `https://kloset.onrender.com/user/available-money/${userID}`,
+        `https://backend-kloset-1.onrender.com/user/available-money/${userID}`,
         {
           headers: { Authorization: token },
         }
@@ -40,7 +40,7 @@ export const AuthProvider = ({ children }) => {
 
       // Fetch purchased items
       const purchasedItemsResponse = await axios.get(
-        `https://kloset.onrender.com/product/purchased-items/${userID}`,
+        `https://backend-kloset-1.onrender.com/product/purchased-items/${userID}`,
         {
           headers: { Authorization: token },
         }
@@ -81,7 +81,7 @@ export const AuthProvider = ({ children }) => {
   const purchaseProduct = async (userID, productID, productPrice, quantity) => {
     try {
       const response = await axios.post(
-        "https://kloset.onrender.com/user/purchase",
+        "https://backend-kloset-1.onrender.com/user/purchase",
         { userID, productID, productPrice, quantity },
         {
           headers: { Authorization: auth.token },
@@ -99,7 +99,7 @@ export const AuthProvider = ({ children }) => {
   const purchaseAllProducts = async (cartItems) => {
     try {
       const response = await axios.post(
-        "https://kloset.onrender.com/user/purchase-all",
+        "https://backend-kloset-1.onrender.com/user/purchase-all",
         { userID: auth.userID, cartItems },
         {
           headers: { Authorization: auth.token },
