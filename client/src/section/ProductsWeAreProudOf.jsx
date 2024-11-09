@@ -9,7 +9,7 @@ const ProductsWeAreProudOf = () => {
   const [products, setProducts] = useState([]);
   const navigate = useNavigate();
   const { addToCart } = useCart();
-
+console.log(products);
   useEffect(() => {
     const fetchProducts = async () => {
       try {

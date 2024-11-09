@@ -29,7 +29,7 @@ const Footer = () => {
       </ul>
       <p className="text-center text-lg lg:text-xl">
         Developed with
-        <a href="https://github.com/Anuragsurya318" target="_blank">
+        <a href="https://github.com/Krushna03" target="_blank">
           ❤️
         </a>
       </p>
