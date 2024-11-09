@@ -65,7 +65,7 @@ console.log(products);
             "RAOUF Products are all made to standard sizes so that you can mix and match them freely."
           }
           imageLink={
-            "https://minimalist-e-commerce.vercel.app/static/media/banner2.03a2ebf8d998e53d1019.jpg"
+            "https://images.pexels.com/photos/3769747/pexels-photo-3769747.jpeg?auto=compress&cs=tinysrgb&w=600"
           }
           where={"/categories"}
           straight={false}
@@ -77,7 +77,7 @@ console.log(products);
             "RAOUF Products are all made to standard sizes so that you can mix and match them freely."
           }
           imageLink={
-            "https://minimalist-e-commerce.vercel.app/static/media/banner1.021adea5caa612e7dea0.jpg"
+            "https://images.pexels.com/photos/3965548/pexels-photo-3965548.jpeg?auto=compress&cs=tinysrgb&w=600"
           }
           where={"/categories"}
           straight={true}

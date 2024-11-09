@@ -17,7 +17,7 @@ const HomePage = () => {
           onClick={() => handleCategoryClick("Furniture")}
         >
           <img
-            src="https://minimalist-e-commerce.vercel.app/static/media/home-img-1.3de7da0f1e4634169c62.jpg"
+            src="https://images.pexels.com/photos/29252364/pexels-photo-29252364/free-photo-of-modern-scandinavian-style-kitchen-interior.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="Live Comfortable"
             className="w-full h-full object-cover"
           />
@@ -30,7 +30,7 @@ const HomePage = () => {
           onClick={() => handleCategoryClick("Skin Care")}
         >
           <img
-            src="https://minimalist-e-commerce.vercel.app/static/media/home-img-2.4daa711cfda65062efd0.jpg"
+            src="https://images.pexels.com/photos/17656720/pexels-photo-17656720/free-photo-of-close-up-of-cosmetics.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt="Skincare"
             className="w-full h-full object-cover"
           />
@@ -44,7 +44,7 @@ const HomePage = () => {
             onClick={() => handleCategoryClick("Kitchen")}
           >
             <img
-              src="https://minimalist-e-commerce.vercel.app/static/media/home-img-3.60734311499ba1dbbc41.jpg"
+              src="https://images.pexels.com/photos/2724748/pexels-photo-2724748.jpeg?auto=compress&cs=tinysrgb&w=600"
               alt="Kitchen"
               className="w-full h-full object-cover"
             />
@@ -57,7 +57,7 @@ const HomePage = () => {
             onClick={() => handleCategoryClick("Electronics")}
           >
             <img
-              src="https://minimalist-e-commerce.vercel.app/static/media/home-img-4.672d1d0d7656e2a778f6.jpg"
+              src="https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&w=600"
               alt="Electronics"
               className="w-full h-full object-cover"
             />
